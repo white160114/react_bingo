@@ -1,0 +1,26 @@
+.bingo {
+    text-align: center;
+}
+
+.bingo-board {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin: 20px auto;
+    width: 200px;
+}
+
+.bingo-cell {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.bingo-cell.selected {
+    background-color: #4caf50;
+    color: white;
+}
